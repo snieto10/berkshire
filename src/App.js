@@ -15,7 +15,7 @@ class App extends Component {
       <React.Fragment>
         <Title />
         <Summary />
-        <Table />
+        <Table stocks={this.state.stocks} />
       </React.Fragment>
     );
   }
