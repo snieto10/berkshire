@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Title from "./components/title";
+import Summary from "./components/summary";
 
 class App extends Component {
   state = {};
@@ -8,6 +9,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <Title />
+        <Summary />
       </React.Fragment>
     );
   }
