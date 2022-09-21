@@ -9,3 +9,7 @@ th {
 .table-top {
   background: lightgray;
 }
+
+.btn-sell-all {
+  white-space: nowrap;
+}

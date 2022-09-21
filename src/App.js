@@ -5,6 +5,7 @@ import Title from "./components/title";
 import Summary from "./components/summary";
 import Table from "./components/table";
 import BuySell from "./components/buySell";
+import Menu from "./components/menu";
 
 class App extends Component {
   state = {
@@ -17,7 +18,11 @@ class App extends Component {
         <Title />
         <Summary stocks={this.state.stocks} />
         <BuySell />
-        <Table stocks={this.state.stocks} />
+
+        <div className="main">
+          <Menu />
+          <Table stocks={this.state.stocks} />
+        </div>
       </React.Fragment>
     );
   }

@@ -24,6 +24,9 @@ class Table extends Component {
               <td>{stock.shares}</td>
               <td>{stock.price}</td>
               <td>{`$${stock.shares * stock.price}`}</td>
+              <td>
+                <button className="btn-sell-all">SELL ALL</button>
+              </td>
             </tr>
           ))}
         </tbody>
