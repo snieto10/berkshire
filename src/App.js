@@ -5,6 +5,8 @@ import Title from "./components/title";
 import Summary from "./components/summary";
 import BuySell from "./components/buySell";
 import Menu from "./components/menu";
+import Table from "./components/table";
+import "./components/table.css";
 
 class App extends Component {
   state = {
@@ -24,36 +26,7 @@ class App extends Component {
         <BuySell />
         <div className="main">
           <Menu />
-          <table className="table">
-            <thead>
-              <tr>
-                <th>Title</th>
-                <th>Genre</th>
-                <th>Stock</th>
-                <th>Rate</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              {this.state.stocks.map((stock) => (
-                <tr key={stock.id}>
-                  <td>{stock.sticker}</td>
-                  <td>{stock.companyName}</td>
-                  <td>{stock.shares}</td>
-                  <td>{stock.price}</td>
-                  <td>{stock.shares * stock.price}</td>
-                  <td>
-                    <button
-                      onClick={() => this.handleDelete(stock)}
-                      className="btn btn-danger btn-small"
-                    >
-                      Delete
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <Table stocks={this.state.stocks} onDelete={this.handleDelete} />
         </div>
       </React.Fragment>
     );

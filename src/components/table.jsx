@@ -13,7 +13,6 @@ class Table extends Component {
             <th>Shares</th>
             <th>Price</th>
             <th>Total Value</th>
-            <th></th>
           </tr>
         </thead>
         <tbody>
