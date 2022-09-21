@@ -15,3 +15,14 @@ th {
 .btn-sell-all {
   white-space: nowrap;
 }
+
+.like {
+  background-color: red;
+  height: 20px;
+  width: 20px;
+}
+.like-green {
+  background-color: lightgreen;
+  height: 20px;
+  width: 20px;
+}

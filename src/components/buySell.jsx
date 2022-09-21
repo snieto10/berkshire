@@ -6,8 +6,12 @@ class BuySell extends Component {
     return (
       <React.Fragment>
         <div className="btn">
-          <button className="btn-buy">BUY</button>
-          <button className="btn-sell">SELL</button>
+          <button onClick={this.props.onBuy} className="btn-buy">
+            BUY
+          </button>
+          <button onClick={this.props.onSell} className="btn-sell">
+            SELL
+          </button>
         </div>
       </React.Fragment>
     );

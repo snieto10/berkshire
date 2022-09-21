@@ -13,6 +13,8 @@ class Table extends Component {
             <th>Shares</th>
             <th>Price</th>
             <th>Total Value</th>
+            <th></th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -24,6 +26,12 @@ class Table extends Component {
               <td>{stock.shares}</td>
               <td>{stock.price}</td>
               <td>{`$${stock.shares * stock.price}`}</td>
+              <td>
+                <div
+                  onClick={() => this.props.onLike(stock)}
+                  className={stock.liked ? "like" : "like-green"}
+                ></div>
+              </td>
               <td>
                 <button
                   onClick={() => this.props.onDelete(stock)}

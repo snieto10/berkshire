@@ -18,15 +18,52 @@ class App extends Component {
     this.setState({ stocks });
   };
 
+  handleBuy = () => {
+    let stocks = this.state.stocks;
+    let number = this.state.stocks.length + 10;
+    stocks.push({
+      id: number,
+      sticker: "FB",
+      companyName: "Facebook",
+      industry: "Technology",
+      shares: 72357455,
+      price: 120,
+      directors: { ceo: "Tim Cooks", cfo: "John Snow" },
+    });
+    this.setState({ stocks });
+  };
+
+  handleSell = () => {
+    let stocks = this.state.stocks;
+    stocks.pop();
+    this.setState({ stocks });
+  };
+
+  handleLike = (stock) => {
+    let stocks = [...this.state.stocks];
+    let index = stocks.indexOf(stock);
+    stocks[index] = { ...stocks[index] };
+    stocks[index].liked = !stocks[index].liked;
+    this.setState({ stocks });
+  };
+
   render() {
     return (
       <React.Fragment>
         <Title />
         <Summary stocks={this.state.stocks} />
-        <BuySell />
+        <BuySell
+          stocks={this.state.stocks}
+          onBuy={this.handleBuy}
+          onSell={this.handleSell}
+        />
         <div className="main">
           <Menu />
-          <Table stocks={this.state.stocks} onDelete={this.handleDelete} />
+          <Table
+            stocks={this.state.stocks}
+            onDelete={this.handleDelete}
+            onLike={this.handleLike}
+          />
         </div>
       </React.Fragment>
     );
