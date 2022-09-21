@@ -13,11 +13,12 @@ class Table extends Component {
             <th>Shares</th>
             <th>Price</th>
             <th>Total Value</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
           {this.props.stocks.map((stock) => (
-            <tr key={stock.sticker}>
+            <tr key={stock.id}>
               <td>{stock.sticker}</td>
               <td>{stock.companyName}</td>
               <td>{stock.industry}</td>
@@ -25,7 +26,12 @@ class Table extends Component {
               <td>{stock.price}</td>
               <td>{`$${stock.shares * stock.price}`}</td>
               <td>
-                <button className="btn-sell-all">SELL ALL</button>
+                <button
+                  onClick={() => this.props.onDelete(stock)}
+                  className="btn-sell-all"
+                >
+                  Delete
+                </button>
               </td>
             </tr>
           ))}

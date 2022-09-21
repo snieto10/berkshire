@@ -1,5 +1,6 @@
-export let stocksInfo = [
+let stocksInfo = [
   {
+    id: 1,
     sticker: "APPL",
     companyName: "Apple Inc",
     industry: "Technology",
@@ -8,6 +9,7 @@ export let stocksInfo = [
     directors: { ceo: "Tim Cooks", cfo: "John Snow" },
   },
   {
+    id: 2,
     sticker: "BAC",
     companyName: "Bank of America",
     industry: "Financial",
@@ -16,6 +18,7 @@ export let stocksInfo = [
     directors: { ceo: "Tim Cooks", cfo: "John Snow" },
   },
   {
+    id: 3,
     sticker: "KO",
     companyName: "The Coca Cola Company",
     industry: "Food",
@@ -24,6 +27,7 @@ export let stocksInfo = [
     directors: { ceo: "Tim Cooks", cfo: "John Snow" },
   },
   {
+    id: 4,
     sticker: "CVX",
     companyName: "Chevron Corp",
     industry: "Oil",
@@ -32,6 +36,7 @@ export let stocksInfo = [
     directors: { ceo: "Tim Cooks", cfo: "John Snow" },
   },
   {
+    id: 5,
     sticker: "AXP",
     companyName: "American Express",
     industry: "Financial",
@@ -40,6 +45,7 @@ export let stocksInfo = [
     directors: { ceo: "Tim Cooks", cfo: "John Snow" },
   },
   {
+    id: 6,
     sticker: "KHC",
     companyName: "Kraft Heinz Co",
     industry: "Food",
@@ -48,6 +54,7 @@ export let stocksInfo = [
     directors: { ceo: "Tim Cooks", cfo: "John Snow" },
   },
   {
+    id: 7,
     sticker: "OXY",
     companyName: "Occidental Petroleum",
     industry: "Oil",
@@ -56,6 +63,7 @@ export let stocksInfo = [
     directors: { ceo: "Tim Cooks", cfo: "John Snow" },
   },
   {
+    id: 8,
     sticker: "MCO",
     companyName: "Moody's Corp",
     industry: "Financial",
@@ -64,6 +72,7 @@ export let stocksInfo = [
     directors: { ceo: "Tim Cooks", cfo: "John Snow" },
   },
   {
+    id: 9,
     sticker: "USB",
     companyName: "U.S Bancorp",
     industry: "Financial",
@@ -72,6 +81,7 @@ export let stocksInfo = [
     directors: { ceo: "Tim Cooks", cfo: "John Snow" },
   },
   {
+    id: 10,
     sticker: "ATVI",
     companyName: "Activision Blizzard Inc",
     industry: "Technology",
@@ -80,6 +90,7 @@ export let stocksInfo = [
     directors: { ceo: "Tim Cooks", cfo: "John Snow" },
   },
   {
+    id: 11,
     sticker: "HPQ",
     companyName: "HP Inc",
     industry: "Technology",
@@ -88,6 +99,7 @@ export let stocksInfo = [
     directors: { ceo: "Tim Cooks", cfo: "John Snow" },
   },
   {
+    id: 12,
     sticker: "BK",
     companyName: "Bank of New York Mellon Corp",
     industry: "Technology",
@@ -96,3 +108,7 @@ export let stocksInfo = [
     directors: { ceo: "Tim Cooks", cfo: "John Snow" },
   },
 ];
+
+export function getStocks() {
+  return stocksInfo;
+}
