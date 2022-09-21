@@ -1,5 +1,7 @@
 .table-stocks {
   margin: 20px auto;
+  white-space: nowrap;
+  border-spacing: 10px;
 }
 
 th {

@@ -4,6 +4,7 @@
   border: 3px solid blue;
   border-radius: 5px;
   padding: 0;
+  align-self: start;
 }
 
 .menu-li {
