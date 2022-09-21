@@ -9,7 +9,7 @@ class Summary extends Component {
           <tbody>
             <tr>
               <td>No of Stocks:</td>
-              <td>20</td>
+              <td>{this.props.stocks.length}</td>
             </tr>
             <tr>
               <td>Equities:</td>

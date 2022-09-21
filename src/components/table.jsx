@@ -3,8 +3,6 @@ import "./table.css";
 
 class Table extends Component {
   render() {
-    let totalValue = this.props.stocks.shares * this.props.stocks.price;
-
     return (
       <table className="table-stocks">
         <thead>

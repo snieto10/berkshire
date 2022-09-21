@@ -66,7 +66,7 @@ export let stocksInfo = [
   {
     sticker: "USB",
     companyName: "U.S Bancorp",
-    industry: "TFinancial",
+    industry: "Financial",
     shares: 119805135,
     price: 46.02,
     directors: { ceo: "Tim Cooks", cfo: "John Snow" },

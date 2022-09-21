@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <Title />
-        <Summary />
+        <Summary stocks={this.state.stocks} />
         <Table stocks={this.state.stocks} />
       </React.Fragment>
     );
