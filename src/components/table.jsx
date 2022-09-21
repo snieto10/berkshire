@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Like from "./common/like";
 import "./table.css";
 
 class Table extends Component {
