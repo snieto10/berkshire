@@ -2,9 +2,11 @@
   background-color: red;
   height: 20px;
   width: 20px;
+  cursor: pointer;
 }
 .like-green {
   background-color: lightgreen;
   height: 20px;
   width: 20px;
+  cursor: pointer;
 }
