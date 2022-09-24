@@ -28,10 +28,11 @@ class Table extends Component {
               <td>{stock.price}</td>
               <td>{`$${stock.shares * stock.price}`}</td>
               <td>
-                <div
-                  onClick={() => this.props.onLike(stock)}
-                  className={stock.liked ? "like" : "like-green"}
-                ></div>
+                <Like
+                  onLike={this.props.onLike}
+                  solution1={stock}
+                  solution2={stock.liked}
+                />
               </td>
               <td>
                 <button

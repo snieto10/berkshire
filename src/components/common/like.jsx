@@ -1,10 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import "./like.css";
 
-class Like extends Component {
-  render() {
-    return <h1>hello</h1>;
-  }
-}
+const Like = (props) => {
+  return (
+    <div
+      onClick={() => props.onLike(props.solution1)}
+      className={props.solution2 ? "like" : "like-green"}
+    ></div>
+  );
+};
 
 export default Like;
